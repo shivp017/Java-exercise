@@ -18,7 +18,7 @@ public class AddnumbersTest {
     @Test
     public void givenStringShouldReturnATotal() {
         //act
-        String actualResult = this.integerAndNonIntegerValue.sumOfIntegerValue(
+       String actualResult = this.integerAndNonIntegerValue.sumOfIntegerValue(
                 "20 30 23 32");
         //assert
         assertEquals("105", actualResult);
@@ -42,3 +42,4 @@ public class AddnumbersTest {
         //assert
         assertEquals("0", actualResult);
     }}
+

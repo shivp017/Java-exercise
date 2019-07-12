@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Addnumbers {
 
     public String  sumOfIntegerValue(String inputStringNumbers){
+
         String[] arrayOfStringNumber = inputStringNumbers.split(" ");
         boolean boo = true;
         int sum = 0;

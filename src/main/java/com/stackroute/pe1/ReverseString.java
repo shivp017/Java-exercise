@@ -1,27 +1,23 @@
 package com.stackroute.pe1;
 
-import java.util.Scanner;
+
 
 public class ReverseString {
+    String revstr = "";
 
-    public static void main(String args[])
-    {
-        String s;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a string");
-        s = sc.nextLine();
+    public String reverseString(String str) {
+        int length = str.length();
 
-        String temp = "";
-
-        int length = s.length();
-
-        for (int i = length - 1; i >= 0; i--)
-        {
-            temp = temp + s .charAt(i);
+        for (int i = length - 1; i >= 0; i--) {
+            revstr = revstr + str.charAt(i);
         }
+        return revstr;
+    }
 
-        System.out.println("String before reversing: " + s);
-        System.out.println("String after reversing: " + temp);
+
+    public String same(String str) {
+        return str;
+
     }
 }
 

@@ -4,10 +4,8 @@ package com.stackroute.pe1;
 import java.util.Scanner;
 
 public class Sorting {
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the number");
-        int number=sc.nextInt();
+    public boolean num ( int number ) {
+
         int i=0;
         int temp;
         int sum=0;
@@ -33,14 +31,14 @@ public class Sorting {
                 }
             }
         }
-        for(int j=0;j<i;j++){
-            System.out.print(arr[j]);
-        }
-        System.out.println("\nsum of even numbers "+sum);
+//        for(int j=0;j<i;j++){
+//            System.out.print(arr[j]);
+//        }
+//        System.out.println("\nsum of even numbers "+sum);
         if(sum>15){
-            System.out.println("True");
+            return true;
         }else
-            System.out.println("False");
+            return false;
     }
 }
 
