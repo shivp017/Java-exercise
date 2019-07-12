@@ -1,16 +1,16 @@
 package com.stackroute.pe1;
-import java.util.Scanner;
+
 
 public class Pallindrome {
 
-    public static void main(String[] args) {
+    public String pallindromesum(int x) {
         int remain;
         int reverse = 0;
         int sum = 0;
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number");
-        int x = sc.nextInt();
+        String s = "";
+
+
         int temp = x;
         while (temp != 0) {
             remain = temp % 10;
@@ -22,7 +22,10 @@ public class Pallindrome {
         }
         if (reverse == x) {
             if (sum < 25) {
-                System.out.println("The Number is Palindrome and the sum is less than 25");
-            } else System.out.println("The Number is Palindrome and the sum is more than 25");
-        } else System.out.println("The Number is not a palindrome");
-    }}
+                s = "Input is pallindrome & lesser than 25";
+
+            } else s = "Input is pallindrome & More than 25";
+        } else s = "The Number is not a palindrome";
+        return s;
+    }
+}

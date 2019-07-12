@@ -4,18 +4,23 @@ package com.stackroute.pe1;
 import java.util.Scanner;
 
 public class Capitalletter {
-
-    public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter a character : ");
-
-        char c = sc.next().charAt(0);
-        if (c >= 65 && c <= 90) {
-            System.out.println("Character is a capital letter");
-        } else if(c >= 97 && c <= 122){
-            System.out.println("Character is a Small letter");
+    public String letterChecker(char inputCharacter){
+        String letterType = "";
+        if (Character.isAlphabetic(inputCharacter)) {
+            if (Character.isUpperCase(inputCharacter)) {
+                letterType = "Capital letter";
+            } else if (Character.isLowerCase(inputCharacter)) {
+                letterType = "Lowercase letter";
+            }
+        }
+        else if (Character.isDigit(inputCharacter)){
+            letterType = "Digit";
+        }
+        else {
+            letterType = "Special symbol";
         }
 
-    }}
+        return letterType;
+    }
+
+}

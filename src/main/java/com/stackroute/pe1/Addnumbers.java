@@ -5,18 +5,29 @@ import java.util.Scanner;
 
 public class Addnumbers {
 
-    public static void main(String[] args)
-    {
-        Scanner sc = new Scanner(System.in);
+    public String  sumOfIntegerValue(String inputStringNumbers){
+        String[] arrayOfStringNumber = inputStringNumbers.split(" ");
+        boolean boo = true;
+        int sum = 0;
+        for (String str: arrayOfStringNumber) {
+            for (int i = 0; i < str.length(); i++){
+                if ( (!(Character.isDigit(str.charAt(i)))) &&
+                        (str.charAt(i) != '-') &&
+                        (str.charAt(i) != '+')){
+                    boo = false;
+                }
 
-         int sum=0,num;
-       do
-        {   System.out.println("Enter Number ");
-            num = sc.nextInt();
-            sum+=num;
-        }while (num!=0);
-       System.out.println(sum);
-
+            }
+        }
+        if (boo){
+            for (String str: arrayOfStringNumber){
+                sum += Integer.parseInt(str);
+            }
+            return String.valueOf(sum);
+        }
+        else {
+            return "Non Integer Value";
+        }
     }
 
 }
