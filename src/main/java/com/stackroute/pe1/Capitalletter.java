@@ -1,4 +1,4 @@
-package com.stackroute;
+package com.stackroute.pe1;
 //check wheather the char is capital or small
 
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package com.stackroute;
+package com.stackroute.pe1;
 
 import java.util.Random;
 import java.util.Scanner;

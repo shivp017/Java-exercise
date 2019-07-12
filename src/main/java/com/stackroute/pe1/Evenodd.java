@@ -1,4 +1,4 @@
-package com.stackroute;
+package com.stackroute.pe1;
 //evenorodd
 import java.util.Scanner;
 

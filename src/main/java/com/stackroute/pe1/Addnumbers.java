@@ -1,4 +1,4 @@
-package com.stackroute;
+package com.stackroute.pe1;
 
 //sum of numbers input number
 import java.util.Scanner;
