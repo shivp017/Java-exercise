@@ -1,3 +1,6 @@
+//Java Exercise 1
+
+
 1. Write a program which accepts a number as input and check whether the given number is
 palindrome or not If it is a palindrome then
 a. Add all the even numbers and check whether the sum is more than 25.
